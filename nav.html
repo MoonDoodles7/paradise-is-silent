@@ -1,0 +1,70 @@
+<!-- Navigation Bar -->
+<div class="nav">
+  <div class="subnav">
+    <p class="navtitle"><b>Paradise is Silent</b></p>
+  </div>
+  <a href="../index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">The World</button>
+    <div class="subnav-content">
+      <a href="../index.html">Setting</a>
+      <a href="../index.html">Lore</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">The Soul</button>
+    <div class="subnav-content">
+      <a href="../index.html">Soul Classes</a>
+      <a href="../index.html">Soul Shades</a>
+      <a href="../index.html">Leveling Up</a>
+      <a href="../index.html">Alignments</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">The Campaign</button>
+    <div class="subnav-content">
+      <a href="../index.html">Rules</a>
+      <a href="../index.html">Applying</a>
+	  <a href="../index.html">Mechanics</a>
+    </div>
+  </div>
+</div>
+
+<!--Mobile Header-->
+<p class="mobileTitle"><b>Paradise is Silent</b></p>
+
+<!-- Mobile Navigation Bar -->
+<button class="toggleButton"><img  width="30px" src="MobileNavToggle.png"></button>
+
+<ul class="mobileNav">
+<li><a href="../index.html">Home</a></li>
+<li><p class="mobileHeader"><b>The World</b></p></li>
+<li><a href="../index.html">Setting</a></li>
+<li><a href="../index.html">Lore</a></li>
+<li><p class="mobileHeader"><b>The Soul</b></p></li>
+<li><a href="../index.html">Soul Classes</a></li>
+<li><a href="../index.html">Soul Shades</a></li>
+<li><a href="../index.html">Leveling Up</a></li>
+<li><a href="../index.html">Alignments</a></li>
+<li><p class="mobileHeader"><b>The Campaign</b></p></li>
+<li><a href="../index.html">Rules</a></li>
+<li><a href="../index.html">Applying</a></li>
+<li><a href="../index.html">Mechanics</a></li>
+</ul>
+
+<script>
+var coll = document.getElementsByClassName("toggleButton");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var mobileNav = this.nextElementSibling;
+    if (mobileNav.style.display === "block") {
+      mobileNav.style.display = "none";
+    } else {
+      mobileNav.style.display = "block";
+    }
+  });
+}
+</script>
